@@ -3,9 +3,10 @@
 	<title>Lambda Button</title>
     </head>
     <body>
-        <form>
-            Click here to trigger:<br>
-            <input type="submit" value="Lambda Function">
+        <form method="POST" action="/">
+            {{ form.csrf_token }}
+            Trigger lambda function:<br>
+            <input type="submit" value="Go!">
         </form>
     </body>
 </html>
