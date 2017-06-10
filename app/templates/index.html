@@ -6,8 +6,10 @@
         <form method="POST" action="/">
             {{ form.csrf_token }}
             Trigger lambda function:<br>
+            <br>
             <input type="submit" value="Go!">
         </form>
+        Value: {{ value }}
     </body>
 </html>
 
