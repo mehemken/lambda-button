@@ -21,7 +21,7 @@ def new(value):
     form = LambdaButton()
     if form.validate_on_submit():
         new_value = ping_lambda()
-        return redirect(f'/{new_value}')
+        return redirect(f'/{new_value}')  # AND THE CROWD GOES WILD!!
     return render_template('index.html', form=form, value=value)
 
 if __name__ == '__main__':
